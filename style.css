@@ -1,0 +1,99 @@
+@import url('https://fonts.cdnfonts.com/css/big-shoulders-text');
+      
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    position: relative;
+    background: #000000;
+    color: #FFFFFF;
+    font-family: 'Big Shoulders Text', sans-serif;
+    font-style: normal;
+    left: 75px;
+    margin: 0px;
+    right:75px;
+    transition: all 0.5s ease;
+}
+
+.welcome{
+    position: absolute;
+    height: 248px;
+    top: 10vh;
+    z-index: 2;
+}
+.bleonsays{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.bleonsays p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    height: 84px;
+    margin: 0;
+}
+.layout p {
+    height: 153px;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 153px;
+    background: linear-gradient(89.59deg, #854CC8 5.79%, #4A66C9 51.73%, #FFB55C 106.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+}
+.contact{
+    position: absolute;
+    height: 24px;
+    top: 88vh;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.stylesvg{
+    z-index: 1;
+    height: 853px;
+    width: 1141px;
+    position: absolute;
+    left: 38.68%;
+    right: -15%;
+    top: 25.56%;
+    bottom: -13vh;
+    transition: all 0.5s ease;
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .stylesvg {
+        top: 30%;
+    }
+    body {
+        left: 32px;
+        right: 32px;
+    }
+}
+@media only screen and (max-width: 480px) {
+  .stylesvg {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  body{
+    left: 8px;
+    right: 8px;
+  }
+}
